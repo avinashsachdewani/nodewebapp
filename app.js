@@ -15,7 +15,7 @@ var port = process.env.PORT || 3001; // use heroku's dynamic port or 3001 if loc
 var cid = process.env.CLIENT_ID || "3MVG9ZL0ppGP5UrAwfCbF8hL72kJ2NkTlB8NcnZmmSssKJseAcBpSnsD_46TgcduDjr.dhRrIQSWE_ksIWs67";
 var csecr = process.env.CLIENT_SECRET || "8817754740677894943";
 var lserv = process.env.LOGIN_SERVER || "https://login.salesforce.com";
-var redir = process.env.REDIRECT_URI || "https://mw-ms-thehubwebapp.azurewebsites.net/token";
+var redir = process.env.REDIRECT_URI || "https://msthehubwebapp.herokuapp.com/token";
 
 
 //
