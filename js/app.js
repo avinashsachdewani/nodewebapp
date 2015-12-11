@@ -1,6 +1,9 @@
 var soql = document.getElementById("soql");
 var result = document.getElementById("result");
-var client = new forcetk.Client(clientId, loginUrl, proxyURL);
+var clientId = '3MVG9ZL0ppGP5UrAwfCbF8hL72kJ2NkTlB8NcnZmmSssKJseAcBpSnsD_46TgcduDjr.dhRrIQSWE_ksIWs67',
+    loginUrl = 'https://login.salesforce.com/',
+    redirectURI = 'https://mw-ms-thehubwebapp.azurewebsites.net/oauthcallback.html',
+    client = new forcetk.Client(clientId, loginUrl);
 function loginDialogCallback(response) {
     if (response && response.access_token) {
         client.setSessionToken(response.access_token, null, response.instance_url);
